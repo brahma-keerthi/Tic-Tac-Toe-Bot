@@ -1,0 +1,35 @@
+{
+    "short_name": "BotTacToe!",
+    "name": "Bot-Tac-Toe: AI Supercharged Tic Tac Toe Game",
+    "icons": [
+        {
+            "src": "/bot-tac-toe/assets/icons/favicon.svg",
+            "type": "image/svg+xml",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/bot-tac-toe/assets/icons/favicon_180.png",
+            "type": "image/png",
+            "sizes": "180x180"
+        },
+        {
+            "src": "/bot-tac-toe/assets/icons/favicon_196.png",
+            "type": "image/png",
+            "sizes": "196x196"
+        },
+        {
+            "src": "/bot-tac-toe/assets/icons/favicon_512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        }
+    ],
+    "start_url": "/bot-tac-toe/",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "theme_color": "#22263f",
+    "description": "Tic-tac-toe game where you can specify the size of the game board and play against an AI of varying difficulty",
+    "lang": "en-US",
+    "prefer_related_applications": false
+}

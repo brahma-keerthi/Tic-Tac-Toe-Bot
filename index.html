@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic-Tac-Toe</title>
+    <!--[if IE]><link rel="shortcut icon" href="assets/icons/favicon.ico"><![endif]-->
+    <link rel="apple-touch-icon" href="assets/icons/favicon_180.png" loading="lazy">
+    <link rel="icon" href="assets/icons/favicon_196.png" loading="lazy">
+    <meta name="theme-color" content="#385aa7"/>
+    <link rel="stylesheet" href="assets/minireset.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style id="table_adjustments"></style>
+    <script type="text/javascript" src="assets/brython/brython.js" defer></script>
+    <script type="text/javascript" src="assets/brython/brython_modules.js" defer></script>
+    <link rel="manifest" href="manifest.webmanifest" loading="lazy">
+</head>
+<body onload="brython()">
+    <main>
+        <div class="container">
+            <section>
+                <div class="board-area">
+                    <div class="game-status" id="game_status">
+                        Game loading...
+                    </div>
+                    <div class="game-start-stop">
+                        <button type="button" class="btn-sq" id="btn_start" name="start" style="display: none;">Start</button>
+                        <button type="button" class="btn-sq" id="btn_reset" name="reset" style="display: none;">Reset</button>
+                    </div>
+                    <table class="board" id="board">
+                        <tr>
+                            <td><span class="cell"></span></td>
+                            <td><span class="cell"></span></td>
+                            <td><span class="cell"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="cell"></span></td>
+                            <td><span class="cell"></span></td>
+                            <td><span class="cell"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="cell"></span></td>
+                            <td><span class="cell"></span></td>
+                            <td><span class="cell"></span></td>
+                        </tr>
+                    </table>
+                </div>
+                <aside>
+                    <h5>Player 1 game piece:</h5>
+                    <ul>
+                        <li><button type="button" class="btn-piece" name="piece_x" style="color: #22263f;">x</button></li>
+                        <li><button type="button" class="btn-piece" name="piece_o">o</button></li>
+                    </ul>
+                    <h5>Who starts first:</h5>
+                    <ul class="ul-start-first">
+                        <span>
+                            <li><button type="button" class="btn-sq btn-st" name="st_p1" style="background-color: #22263f;">Player 1</button></li><li><button type="button" class="btn-sq btn-st" name="st_p2">Player 2</button></li>
+                        </span>
+                    </ul>
+                    <h5>Player 2 role:</h5>
+                    <select name="player_2_role" id="player_2_role">
+                        <option value="another_human">Another Human</option>
+                        <option value="ai_easy" selected="selected">AI — Easy</option>
+                        <option value="ai_hard">AI — Hard</option>
+                    </select>
+                </aside>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <h3> <h2> Brahma Keerthi H S - 01JST20CS034  |  Hardik Modi - 01JST20CS062 </h2>
+            <h2> Gaurav R T - 01JST20CS056   |   Gohith H - 01JST20CS058 </h2>
+            
+        </h3>
+    </footer>
+
+    <script type="text/python" src="python/interaction.py" defer></script>
+    <script type="text/javascript" defer>
+    // register the service worker for PWA
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./service_worker.js');
+    };
+    </script>
+</body>
+</html>
